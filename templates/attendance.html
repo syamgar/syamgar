@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block attendance %}
+
+<h1 class="text-center text-warning">ATTEENDANCE</h1><br>
+
+
+<main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3 text-white bg-warning border-primary">
+                    <h4 class="my-0 fw-normal">Take Attendance</h4>
+                </div>
+                <div class="card-body">
+                    <img src ='static/face-recognition.png' height=184 width=280></img>
+                    <button type="button" class="w-100 btn btn-lg btn-warning">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3 text-white bg-warning border-primary">
+                    <h4 class="my-0 fw-normal">Add Student</h4>
+                </div>
+                <div class="card-body">
+                    <img src = 'static/immigration.png' height=184 width=280></img>
+                    <button type="button" class="w-100 btn btn-lg btn-warning">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-warning border-primary">
+                    <h4 class="my-0 fw-normal">Attendance Reoprts</h4>
+                </div>
+                <div class="card-body">
+                    <img src = 'static/Reports_Attendance.jpg' height=184 width=280></img>
+                    <button type="button" class="w-100 btn btn-lg btn-warning">Go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock attendance %}

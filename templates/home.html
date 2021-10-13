@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block home %}
+
+<h1 class="text-center text-primary">SMART CLASSROOM MANAGEMENT SYSTEM </h1><br>
+
+
+<main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Student</h4>
+                </div>
+                <div class="card-body">
+                    <img src = 'static/student.png' height=184 width=280></img>
+                    <form method='get' action='http://127.0.0.1:8000/slogin'>
+                    <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Teacher</h4>
+                </div>
+                <div class="card-body">
+                    <img src = 'static/teacher.png' height=184 width=280></img>
+                    <form method='get' action='http://127.0.0.1:8000/tlogin/'>
+                    <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Admin</h4>
+                </div>
+                <div class="card-body">
+                    <img src = 'static/admin.png' height=184 width=280></img>
+                    <form method='get' action='http://127.0.0.1:8000/admin'>
+                    <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock home %}
