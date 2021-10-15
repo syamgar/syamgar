@@ -25,7 +25,7 @@ SECRET_KEY = '1u+#cyrij9)ig!&$hah4!sjx5gw^in!nwm5oor-gye6n5!p!vq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', "https://smart-classroom-management-sys.herokuapp.com/"]
+ALLOWED_HOSTS = ['127.0.0.1', "smart-classroom-management-sys.herokuapp.com/"]
 
 
 # Application definition
